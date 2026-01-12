@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: black;
+  font-weight: 700;
+  src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter-Bold.woff') format('woff'),
+}
+
+:root {
+  --orange: #bf7506;
+  --black: #000;
+  --white: #fff;
+}
+
+
+html {
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 62.5%; /*10px*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 32rem;
+  min-height: 100vh;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+
+img,
+svg {
+  /* display: block;
+  max-width: 100%;
+  height: auto; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+button, input {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  /* background-color: transparent; */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  height: 100%;
+  max-width: 128rem;
+  width: 100%;
+  padding: 0 20.5rem;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  padding-top: 4rem;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  width: 2.5rem;
+  height: 1.6rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  line-height: 1.5;
+  color: var(--orange);
+}
